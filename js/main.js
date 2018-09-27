@@ -24,11 +24,10 @@ $(() => {
       const worker = new Worker('js/webworker.js'); // create our worker
       worker.postMessage({ x }); // post a message to our worker
 
-      worker.onmessage = event => { // listen for events from the worker
+      worker.onmessage = (event) => { // listen for events from the worker
         const y = event.data;
         $output.html(y);
       };
-
     } else {
       const y = fib(x);
       $output.html(y);
