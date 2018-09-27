@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>WebWorker Fibonacci</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="no-webworker-fibo">
+        <h4>Without Web Worker</h4>
+        <div>
+          fib(<span class="input">x</span>) = <span class="output">y</span>.
+        </div>
+
+        <div class="apollo-message" style="display: none;">
+          <p>Tough: We were never going to shirk our responsibilities because we're forever accountable for what we do.</p>
+        </div>
+      </div>
+      <div class="webworker-fibo">
+        <hr>
+        <h4>With Web Worker</h4>
+        <div>
+          fib(<span class="input">x</span>) = <span class="output">y</span>.
+        </div>
+
+        <div class="apollo-message" style="display: none;">
+          <p>Competent: We're never going to take anything for granted. We'll never stop learning.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/jquery@latest/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/lodash@latest/lodash.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
